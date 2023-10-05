@@ -1,0 +1,14 @@
+{
+  "name": "ls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cors-anywhere.js",
+  "scripts": {
+    "start": "node cors-anywhere.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors-anywhere": "^0.4.4"
+  }
+}
