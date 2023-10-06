@@ -51,6 +51,7 @@ function isValidHostName(hostname) {
  * @param request {ServerRequest}
  */
 function withCORS(headers, request) {
+  console.log('Adding cors headers');
   headers['access-control-allow-origin'] = '*';
   var corsMaxAge = request.corsAnywhereRequestState.corsMaxAge;
   if (request.method === 'OPTIONS' && corsMaxAge) {
@@ -67,6 +68,7 @@ function withCORS(headers, request) {
 
   headers['access-control-expose-headers'] = Object.keys(headers).join(',');
 
+  console.log(headers);
   return headers;
 }
 
