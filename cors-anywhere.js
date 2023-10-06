@@ -428,7 +428,7 @@ function getHandler(options, proxy) {
     req.corsAnywhereRequestState.proxyBaseUrl = proxyBaseUrl;
 
     console.log("sending proxyRequest");
-
+    console.log(req)
     proxyRequest(req, res, proxy);
   };
 }
