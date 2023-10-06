@@ -2,9 +2,8 @@
   "name": "ls",
   "version": "1.0.0",
   "description": "",
-  "main": "cors-anywhere.js",
   "scripts": {
-    "start": "node cors-anywhere.js"
+    "start": "cp cors-anywhere.js 'node_modules/cors-anywhere/lib/' && node cors-pro.js"
   },
   "author": "",
   "license": "ISC",
